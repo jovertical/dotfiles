@@ -1,12 +1,4 @@
 # Laravel
-artisan() {
-  if [ -f bin/artisan ]; then
-    php bin/artisan '$@'
-  else
-    php artisan '$@'
-  fi
-}
-
 alias art='php artisan'
 alias serve='php artisan serve'
 alias tinker='php artisan tinker'
@@ -35,24 +27,25 @@ alias drma='docker rm $(docker ps -a -q)'
 alias drmai='docker rmi $(docker images -q)'
 alias dwipe='docker kill $(docker ps -a -q) && docker system prune -af'
 
-# Version Control
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias pull='git pull'
-alias push='git push'
-alias nah='git checkout . && git reset --hard'
-alias wip='git add . && git commit -m 'wip' && git push origin master'
-
-# Package Management
+# Composer
 alias cu='composer update'
 alias ci='composer install'
 alias cda='composer dump-autoload'
 
+# Git
+alias gst='git status'
+alias ga='git add'
+alias gcm='git commit'
+alias gck='git checkout'
+alias gf='git fetch'
+alias gpl='git pull'
+alias gfp='git fetch && git pull'
+alias gps='git push'
+alias nah='git checkout . && git reset --hard'
+alias fix='git add . && git commit -m 'fix' && git push'
+alias wip='git add . && git commit -m 'wip' && git push'
+
 # Generic
-alias xc:c='xclip -se c'
-alias pcat='pygmentize -f terminal256 -O style=native -g'
-alias emulator='${ANDROID_HOME}/tools/emulator'
-alias ssh:tokyo1='ssh -i ~/Documents/ipp_system/oldippv2.pem ubuntu@54.92.70.146'
-alias ssh:tokyo2='ssh -i ~/Documents/ipp_system/ippv2.pem ubuntu@52.197.151.207'
-alias clr='clear'
+copycat() {
+  cat "$1" | clip.exe
+}
