@@ -42,10 +42,11 @@ alias gpl='git pull'
 alias gfp='git fetch && git pull'
 alias gps='git push'
 alias nah='git checkout . && git reset --hard'
-alias fix='git add . && git commit -m 'fix' && git push'
-alias wip='git add . && git commit -m 'wip' && git push'
+alias fix='git add . && git commit -m "fix" && git push'
+alias wip='git add . && git commit -m "wip" && git push'
 
 # Generic
-copycat() {
+alias vsc="code-insiders ."
+ccat() {
   cat "$1" | clip.exe
 }
