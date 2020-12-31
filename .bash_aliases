@@ -1,5 +1,3 @@
-alias code='code-insiders'
-
 # Laravel
 alias art='php artisan'
 alias serve='php artisan serve'
@@ -19,8 +17,10 @@ alias cda='composer dump-autoload'
 # Git
 alias ga='git add'
 alias gck='git checkout'
-alias gcm='git commit'
+alias gcm='git commit -m'
+alias gfck='git fetch && git checkout'
 alias gfp='git fetch && git pull'
+alias gpl='git pull'
 alias gps='git push'
 alias gst='git status'
 alias nah='git checkout . && git reset --hard'
