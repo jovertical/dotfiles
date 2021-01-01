@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      'Fira Code, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -142,6 +142,7 @@ module.exports = {
 
     hypest: {
       hideControls: true,
+      darkmode: true,
     },
   },
 
