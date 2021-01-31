@@ -1,0 +1,51 @@
+{
+  "React functional component": {
+    "prefix": "rfc",
+    "body": [
+      "import * as React from 'react';",
+      "",
+      "interface Props {",
+      "\t//",
+      "}",
+      "",
+      "export default function ${TM_FILENAME_BASE}(props: Props) {",
+      "\treturn ${1:null};",
+      "}",
+      ""
+    ]
+  },
+
+  "React Native functional component": {
+    "prefix": "rnfc",
+    "body": [
+      "import * as React from 'react';",
+      "import { View, StyleSheet } from 'react-native';",
+      "",
+      "interface Props {",
+      "\t//",
+      "}",
+      "",
+      "export default function ${TM_FILENAME_BASE}(props: Props) {",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t${1:<View />}",
+      "\t\t</View>",
+      "\t);",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {},",
+      "});",
+      ""
+    ]
+  },
+
+  "One time useEffect": {
+    "prefix": "ruf",
+    "body": [
+      "React.useEffect(() => {",
+      "\t// Perform side effects...",
+      "}, [$1])"
+    ]
+  }
+}

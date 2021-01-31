@@ -1,0 +1,97 @@
+{
+  "Create a class method": {
+    "prefix": "met",
+    "body": ["${1:public} function ${2:exampleMethod}()", "{", "    $3", "}"]
+  },
+
+  "Create a test method": {
+    "prefix": "it",
+    "body": ["/** @test **/", "${public} function it${1}()", "{", "\t$2", "}"]
+  },
+
+  "Create an invokable method": {
+    "prefix": "inv",
+    "body": ["public function __invoke()", "{", "    $1", "}"]
+  },
+
+  "Create a new class constructor": {
+    "prefix": "__",
+    "body": [
+      "/**",
+      " * Create a new ${1:example} instance",
+      " */",
+      "public function __construct()",
+      "{",
+      "\t${2}",
+      "}"
+    ]
+  },
+
+  "Create a feature test class": {
+    "prefix": "ft",
+    "body": [
+      "namespace Tests\\Feature;",
+      "",
+      "use Illuminate\\Foundation\\Testing\\RefreshDatabase;",
+      "use Illuminate\\Foundation\\Testing\\WithFaker;",
+      "use Tests\\TestCase;",
+      "",
+      "class ${1:ExampleTest} extends TestCase",
+      "{",
+      "\t/** @test **/",
+      "\tpublic function it()",
+      "\t{",
+      "\t\t${2}",
+      "\t}",
+      "}"
+    ]
+  },
+
+  "Create a unit test class": {
+    "prefix": "ut",
+    "body": [
+      "namespace Tests\\Unit;",
+      "",
+      "use PHPUnit\\Framework\\TestCase;",
+      "",
+      "class ${1:ExampleTest} extends TestCase",
+      "{",
+      "\t/** @test **/",
+      "\tpublic function it()",
+      "\t{",
+      "\t\t${2}",
+      "\t}",
+      "}"
+    ]
+  },
+
+  "Create a belongsTo relation": {
+    "prefix": "mbt",
+    "body": [
+      "public function ${1:relatedModel}()",
+      "{",
+      "\treturn \\$this->belongsTo(${2:Model::class});",
+      "}"
+    ]
+  },
+
+  "Create a belongsToMany relation": {
+    "prefix": "mbtm",
+    "body": [
+      "public function ${1:relatedModel}()",
+      "{",
+      "\treturn \\$this->belongsToMany(${2:Model::class});",
+      "}"
+    ]
+  },
+
+  "Create a hasMany relation": {
+    "prefix": "mhm",
+    "body": [
+      "public function ${1:relatedModel}()",
+      "{",
+      "\treturn \\$this->hasMany(${2:Model::class});",
+      "}"
+    ]
+  }
+}
