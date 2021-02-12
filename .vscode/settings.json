@@ -38,7 +38,7 @@
       "vercel"
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.fontFamily": "FiraCode-Light, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.formatOnSave": false,
@@ -90,7 +90,7 @@
     "explorer.confirmDragAndDrop": false,
     "php.suggest.basic": false,
     "php.validate.enable": false,
-    "workbench.colorTheme": "SynthWave '84",
+    "workbench.colorTheme": "GitHub Light",
     "workbench.iconTheme": "file-icons",
     "workbench.startupEditor": "newUntitledFile",
     "[html]": {
