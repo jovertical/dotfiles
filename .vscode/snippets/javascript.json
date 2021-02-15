@@ -1,7 +1,0 @@
-{
-  "Create new Promise": {
-    "prefix": "cnp",
-    "body": ["$1 new Promise((resolve, reject) => {", "\t$2", "})"]
-  }
-}
-  

@@ -42,6 +42,10 @@ brew install --cask hyper
 # Install Hypest theme
 hyper i hyper-hypest
 
+# Install plugins
+hyper i hyper-tabs-enhanced
+hyper i hyper-search
+
 # Finally, reload configuration
 cp .hyper.js $HOME
 ```
